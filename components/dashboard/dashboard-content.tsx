@@ -7,6 +7,7 @@ import { QuickLogModal } from "@/components/tracking/quick-log-modal"
 import { ExportModal } from "@/components/data-export/export-modal"
 
 export function DashboardContent() {
+}
 @@ .. @@
       <main className="container mx-auto px-4 py-8">
 -        <div className="mb-8">

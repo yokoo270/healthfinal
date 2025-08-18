@@ -1,14 +1,1 @@
-@@ .. @@
-export function ExportModal({ children }: ExportModalProps) {
--  const { user, canUseFeature } = useAuth()
-+  const { user } = useAuth()
-  const [isOpen, setIsOpen] = useState(false)
-   const [isExporting, setIsExporting] = useState(false)
-@@ .. @@
-     chatHistory: false,
-   })
-
--  const canExport = canUseFeature("exportData")
-+  const canExport = user?.subscription?.plan !== "free" // Only paid plans can export
-
-  const handleExport = async () => {
+{"code":"rate-limited","message":"You have hit the rate limit. Please upgrade to keep chatting.","providerLimitHit":false,"isRetryable":true}

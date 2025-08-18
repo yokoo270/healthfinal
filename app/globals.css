@@ -89,3 +89,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom glow effects */
+@layer components {
+  .glow-primary {
+    @apply shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-shadow;
+  }
+  
+  .glow-secondary {
+    @apply shadow-lg shadow-secondary/25 hover:shadow-secondary/40 transition-shadow;
+  }
+  
+  .glow-card {
+    @apply hover:shadow-lg hover:shadow-primary/10 transition-all duration-300;
+  }
+}
